@@ -11,6 +11,10 @@ transformers = "*"
 spacy = "*"
 ftfy = "==4.4.3"
 uvicorn = "*"
+torch = "*"
+torchvision = "*"
+jupyterlab = "*"
+ipywidgets = "*"
 
 [requires]
 python_version = "3.7"
