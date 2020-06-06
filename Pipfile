@@ -10,6 +10,7 @@ fastapi = "*"
 transformers = "*"
 spacy = "*"
 ftfy = "==4.4.3"
+uvicorn = "*"
 
 [requires]
 python_version = "3.7"
