@@ -15,6 +15,7 @@ torch = "*"
 torchvision = "*"
 jupyterlab = "*"
 ipywidgets = "*"
+tensorflow = "*"
 
 [requires]
 python_version = "3.7"
