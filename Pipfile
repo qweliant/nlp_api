@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-fastapi = "*"
+fastapi = "0.55.1"
 transformers = "*"
 spacy = "*"
 ftfy = "==4.4.3"
