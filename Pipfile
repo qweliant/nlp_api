@@ -16,6 +16,7 @@ torchvision = "*"
 jupyterlab = "*"
 ipywidgets = "*"
 tensorflow = "*"
+pydantic = "*"
 
 [requires]
 python_version = "3.7"
