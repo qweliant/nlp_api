@@ -8,7 +8,7 @@ app = FastAPI()
 @app.get("/nlp/foucault")
 async def root():
     TRAIN_TEXT = """The work of an intellectual is not to mould the political will of others; it is, through the analyses that he does in his own field, to re-examine evidence and assumptions, to shake up habitual ways of working and thinking, to dissipate conventional familiarities, to re-evaluate rules and institutions and to participate in the formation of a political will (where he has his role as citizen to play)."""
-    prompt = "Until this is user text"
+    prompt = ""
     return {"Foucault": nlp.generate(TRAIN_TEXT, prompt)}
 
 

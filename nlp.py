@@ -1,9 +1,7 @@
 from transformers import (
     GPT2LMHeadModel,
     GPT2Tokenizer,
-    AutoModelWithLMHead,
-    AutoTokenizer,
-    pipeline,
+    pipeline
 )
 
 import re
@@ -13,7 +11,7 @@ class NLP:
     def __init__(self):
         self.model = GPT2LMHeadModel.from_pretrained("gpt2")
         self.tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-        self.generated = None
+        self.generated = ""
 
     def generate(self, TRAIN_TEXT, prompt):
         inputs = self.tokenizer.encode(
@@ -39,3 +37,6 @@ class NLP:
         v = summarizer(self.generated, max_length=250, min_length=30)[0]["summary_text"]
 
         return v
+
+    def save_model():
+        pass
