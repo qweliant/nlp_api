@@ -9,8 +9,9 @@ import re
 
 class NLP:
     def __init__(self):
-        self.model = GPT2LMHeadModel.from_pretrained("gpt2")
-        self.tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+        
+        self.model = GPT2LMHeadModel.from_pretrained("../models/")
+        self.tokenizer = GPT2Tokenizer.from_pretrained("../models/")  # Add specific options if needed
         self.generated = ""
 
     def generate(self, TRAIN_TEXT, prompt):
