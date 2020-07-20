@@ -1,0 +1,26 @@
+{
+    "root": "/mnt/c/Users/qweli/Documents/Programming/nlp_api",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/qweliant/nlp_api.git",
+        "commit": "24497652aec52e0941773df68ea3acd49ec51d35"
+    },
+    "email": "qweliantanner@gmail.com",
+    "startedAt": "2020-07-20T02:30:17.529422",
+    "host": "LAPTOP-4AHPBNQQ",
+    "username": "tetsuo",
+    "executable": "/home/tetsuo/.local/share/virtualenvs/nlp_api-pEzz9KNi/bin/python",
+    "os": "Linux-4.19.104-microsoft-standard-x86_64-with-glibc2.29",
+    "python": "3.8.2",
+    "cpu_count": 12,
+    "args": [
+        "-f",
+        "/home/tetsuo/.local/share/jupyter/runtime/kernel-e4aab5d0-f4a6-47a6-892a-c2371ebd4a42.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "cool-sea-5",
+    "project": "huggingface",
+    "heartbeatAt": "2020-07-20T03:09:44.176948"
+}

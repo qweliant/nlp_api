@@ -2,7 +2,8 @@ from transformers import (
     pipeline,
     AutoModelWithLMHead,
     AutoTokenizer,
-    AutoModelForTokenClassification
+    AutoModelForTokenClassification,
+
 )
 import torch
 import re
@@ -16,8 +17,15 @@ class NLP:
         self.chat_tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
         self.chat_model = AutoModelWithLMHead.from_pretrained("microsoft/DialoGPT-medium")
 
-    
-    def generate(self, PADDING_TEXT="BURN IT DOWN", prompt="I do no not see why"):
+    def generate(
+        self, 
+        PADDING_TEXT="""\n
+        Doug: i like hamburgs
+        Mike: You must be from, Germany
+        
+        """, 
+        prompt="I do no not see why"
+        ):
         
         inputs = self.gen_tokenizer.encode(PADDING_TEXT + prompt, add_special_tokens=False, return_tensors="pt")
         prompt_length = len(self.gen_tokenizer.decode(inputs[0], skip_special_tokens=True, clean_up_tokenization_spaces=True))
